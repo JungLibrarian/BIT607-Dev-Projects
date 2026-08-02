@@ -98,6 +98,14 @@ a.active {
   border-color: white;
 }
 
+/* stayling page description on each page except the main home page */
+.section-description {
+  font-size: 1.3rem;
+  color: #555;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
 /* intro section on home page */
 .intro {
   background-color: rgb(229, 237, 253);
@@ -165,7 +173,7 @@ a.active {
   vertical-align: top;
 }
 
-/* gallery grid 4x4 */
+/* show gallery images in grid 4x4 */
 .gallery {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -197,8 +205,9 @@ footer .container {
   gap: 2rem;
 }
 
-/* responsive mobile table size */
+/* responsive tablet size */
 @media (max-width: 768px) {
+  /* re-arrange navigation items to vertical column */
   .nav .container {
     flex-direction: column;
     align-items: center;
@@ -210,19 +219,23 @@ footer .container {
     gap: 1rem;
   }
 
+  /* button width filled across the page */
   .button {
     width: 100%;
   }
 
+  /* reduce the space between the table and heading  */
   .service-table {
     margin-top: 1rem;
   }
 
+  /* reduce the space inside each cell */
   .service-table td,
   .service-table t {
     padding: 0.5rem;
   }
 
+  /* change the footer items to vetical column */
   footer .container {
     flex-direction: column;
     text-align: center;
@@ -233,12 +246,11 @@ footer .container {
     flex-direction: column;
     gap: 2rem;
   }
-}
-/* responsive mobile gallery*/
-@media (max-width: 900px) {
+
   .gallery {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
+
   .intro .container {
     flex-direction: column;
     text-align: center;
@@ -248,14 +260,8 @@ footer .container {
   }
 }
 
+/* responsive mobile size */
 @media (max-width: 600px) {
-  .gallery {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-/* phone size */
-@media (max-width: 400px) {
   .gallery {
     grid-template-columns: 1fr;
   }

@@ -186,6 +186,10 @@ a.active {
   border-radius: 6px;
 }
 
+.column {
+  width: 100%;
+}
+
 /* footer */
 footer {
   padding: 2rem 0;

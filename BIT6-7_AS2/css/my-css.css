@@ -116,7 +116,6 @@ a.active {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 2rem;
 }
 
 .right-col-photo img {
@@ -187,11 +186,6 @@ a.active {
   border-radius: 6px;
 }
 
-/* center the google form on book page*/
-.booking-form {
-  display: flex;
-  justify-content: center;
-}
 /* footer */
 footer {
   padding: 2rem 0;
@@ -207,16 +201,16 @@ footer .container {
 
 /* responsive tablet size */
 @media (max-width: 768px) {
-  /* re-arrange navigation items to vertical column */
+  /* re-arrange logo and navigation items to vertical column */
   .nav .container {
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
+    gap: 3rem;
   }
+
+  /* reduce nave item gaps */
   .nav-menu {
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
+    gap: 0.5rem;
   }
 
   /* button width filled across the page */
@@ -242,6 +236,7 @@ footer .container {
     gap: 1.5rem;
   }
 
+  /* change direction to coloumn and gap between columns - used in home page why choose us */
   .row {
     flex-direction: column;
     gap: 2rem;

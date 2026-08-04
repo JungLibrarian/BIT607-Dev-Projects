@@ -199,6 +199,23 @@ a.active {
   border-radius: 12px;
 }
 
+.booking-form div {
+  display: flex;
+}
+
+.booking-form legend {
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+fieldset {
+  border: none;
+  margin: 2rem;
+}
+
+.services {
+  display: grid;
+}
 /* footer across all pages */
 footer {
   padding: 2rem 0;

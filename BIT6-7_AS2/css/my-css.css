@@ -175,7 +175,7 @@ a.active {
 /* show gallery images in grid 4x4 on the gallery page */
 .gallery {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: auto auto auto auto;
   gap: 10px;
 }
 
@@ -208,6 +208,7 @@ a.active {
   border: 1px solid;
   padding: 1.5rem;
   border-radius: 8px;
+  width: 100%;
 }
 
 .booking-form label {
@@ -216,17 +217,36 @@ a.active {
 }
 
 /* input styling */
+
 .booking-form input {
   width: 100%;
 }
 
-/* form - service section, individual services */
-.card {
+/* booking form - display 2 service cards in one line   */
+.service-items {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+/* booking form - styling each service card */
+.service-item {
   display: flex;
-  align-items: flex-start;
   gap: 1rem;
+  align-items: flex-start;
   border: 1px solid #ccc;
+  border-radius: 8px;
   padding: 1rem;
+  margin: 1rem;
+}
+
+/* remove margin between labels so that checkbox and the description are top-aligned */
+.service-item label {
+  margin: 0;
+}
+
+/* booking form - service cards checkbox to auto size rather than 100% */
+.service-item input {
+  width: auto;
 }
 
 /* footer across all pages */
@@ -286,7 +306,7 @@ footer .container {
   }
 
   .gallery {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: auto auto;
   }
 
   .intro .container {
@@ -301,6 +321,6 @@ footer .container {
 /* responsive mobile size */
 @media (max-width: 600px) {
   .gallery {
-    grid-template-columns: 1fr;
+    grid-template-columns: auto;
   }
 }

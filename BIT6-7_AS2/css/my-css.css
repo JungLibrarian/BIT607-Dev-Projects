@@ -249,6 +249,25 @@ a.active {
   width: auto;
 }
 
+/* booking form submit button */
+.submit {
+  margin-top: 2rem;
+}
+.submit-button {
+  border-radius: 8px;
+  border: none;
+  padding: 0.8rem;
+  background-color: #bdbdbd;
+  color: #363636;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #140664;
+  color: #ffffff;
+}
 /* footer across all pages */
 footer {
   padding: 2rem 0;
@@ -292,13 +311,6 @@ footer .container {
     padding: 0.5rem;
   }
 
-  /* change the footer items to vetical column */
-  footer .container {
-    flex-direction: column;
-    text-align: center;
-    gap: 1.5rem;
-  }
-
   /* change direction to coloumn and gap between columns - used in home page why choose us */
   .row {
     flex-direction: column;
@@ -316,11 +328,25 @@ footer .container {
   .right-col-photo {
     justify-content: center;
   }
+
+  /* change the footer items to vetical column */
+  footer .container {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+  }
 }
 
 /* responsive mobile size */
 @media (max-width: 600px) {
+  /* display one photo per line */
   .gallery {
+    grid-template-columns: auto;
+  }
+
+  /* booking form - display 1 service card per line   */
+  .service-items {
+    display: grid;
     grid-template-columns: auto;
   }
 }

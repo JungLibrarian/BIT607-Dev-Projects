@@ -199,23 +199,36 @@ a.active {
   border-radius: 12px;
 }
 
-.booking-form div {
-  display: flex;
-}
-
 .booking-form legend {
   margin-bottom: 1rem;
   font-size: 1.3rem;
 }
 
-fieldset {
-  border: none;
-  margin: 2rem;
+.booking-form fieldset {
+  border: 1px solid;
+  padding: 1.5rem;
+  border-radius: 8px;
 }
 
-.services {
-  display: grid;
+.booking-form label {
+  display: block;
+  margin: 0.4rem;
 }
+
+/* input styling */
+.booking-form input {
+  width: 100%;
+}
+
+/* form - service section, individual services */
+.card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  border: 1px solid #ccc;
+  padding: 1rem;
+}
+
 /* footer across all pages */
 footer {
   padding: 2rem 0;

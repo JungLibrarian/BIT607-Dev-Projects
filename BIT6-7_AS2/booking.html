@@ -35,68 +35,78 @@
       <section class="top-section">
         <div class="container">
           <h1>Book an appointment</h1>
+          <!-- booking form starts -->
           <form class="booking-form" action="">
-            <!-- owner details -->
-            <fieldset>
-              <legend>Owner details</legend>
+            <div class="row">
+              <!-- owner details -->
+              <fieldset class="owner-details">
+                <legend>Owner details</legend>
 
-              <div>
-                <label for="owner-name">Owner's name:</label>
-                <input type="text" id="owner-name" name="owner-name" required />
-              </div>
+                <div>
+                  <label for="owner-name">Owner's name:</label>
+                  <input
+                    type="text"
+                    id="owner-name"
+                    name="owner-name"
+                    required
+                  />
+                </div>
 
-              <div>
-                <label for="email">Email Address:</label>
-                <input type="email" id="email" name="email" required />
-              </div>
-            </fieldset>
+                <div>
+                  <label for="email">Email Address:</label>
+                  <input type="email" id="email" name="email" required />
+                </div>
+              </fieldset>
 
-            <!-- dog details-->
-            <fieldset>
-              <legend>Your dog's information</legend>
-              <div>
-                <label for="dog-name">Your dog's name</label>
-                <input type="text" id="dog-name" name="dog-name" required />
-              </div>
-              <div>
-                <label for="dog-breed">Dog breed</label>
-                <input type="text" id="dog-breed" name="dog-breed" />
-              </div>
-              <div>
-                <label for="dog-age">Dog's age</label>
-                <input type="number" id="dog-age" name="dog-age" min="0" />
-              </div>
-            </fieldset>
+              <!-- dog details-->
+              <fieldset class="dog-details">
+                <legend>Your dog's information</legend>
+                <div>
+                  <label for="dog-name">Your dog's name</label>
+                  <input type="text" id="dog-name" name="dog-name" required />
+                </div>
+                <div>
+                  <label for="dog-breed">Dog breed</label>
+                  <input type="text" id="dog-breed" name="dog-breed" />
+                </div>
+                <div>
+                  <label for="dog-age">Dog's age</label>
+                  <input type="number" id="dog-age" name="dog-age" min="0" />
+                </div>
+              </fieldset>
+            </div>
             <!-- services -->
-            <fieldset class="services">
-              <legend>Choose services</legend>
+            <div class="row">
+              <fieldset class="services">
+                <legend>Choose services</legend>
 
-              <input
-                type="checkbox"
-                id="bath-and-brush"
-                name="services"
-                value="bath-and-brush"
-              />
-              <label class="card" for="bath-and-brush">
-                <strong>Bath and Brush</strong>
-                <span>shampoo, blow-dry, brush-out and nail trim </span>
-              </label>
+                <input
+                  type="checkbox"
+                  id="bath-and-brush"
+                  name="services"
+                  value="bath-and-brush"
+                />
+                <label class="card" for="bath-and-brush">
+                  <strong>Bath and Brush</strong>
+                  <span>shampoo, blow-dry, brush-out and nail trim </span>
+                </label>
 
-              <input type="checkbox" name="services" value="haircut" />
-              <label for="haircut">
-                <strong>Haircut</strong>
-                <span>bath, blow-dry, haircut</span></label
-              >
+                <input type="checkbox" name="services" value="haircut" />
+                <label for="haircut">
+                  <strong>Haircut</strong>
+                  <span>bath, blow-dry, haircut</span></label
+                >
 
-              <input type="checkbox" name="services" value="nail-trim" />
-              <label for="nail-trim">Nail Trim </label>
+                <input type="checkbox" name="services" value="nail-trim" />
+                <label for="nail-trim">Nail Trim </label>
 
-              <input type="checkbox" id="" name="services" value="" />
-              <label for=""></label>
+                <input type="checkbox" id="" name="services" value="" />
+                <label for=""></label>
 
-              <input type="checkbox" id="" name="services" value="" />
-              <label for=""></label>
-            </fieldset>
+                <input type="checkbox" id="" name="services" value="" />
+                <label for=""></label>
+              </fieldset>
+            </div>
 
             <input type="submit" value="Submit" />
           </form>

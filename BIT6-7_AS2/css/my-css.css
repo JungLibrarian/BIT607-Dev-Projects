@@ -62,8 +62,8 @@ p {
 .nav-menu a {
   text-decoration: none;
   padding: 0.75rem 1rem;
-  border-radius: 0.5rem;
-  color: rgb(78, 78, 78);
+  border-radius: 6px;
+  color: #2a2a2a;
 }
 .nav-menu a:hover,
 a.active {
@@ -76,7 +76,7 @@ a.active {
   display: inline-block;
   padding: 1rem 5rem;
   font-size: 1rem;
-  border-radius: 0.5rem;
+  border-radius: 12px;
   cursor: pointer;
   border-color: #001ea5;
   text-decoration: none;
@@ -101,7 +101,7 @@ a.active {
 /* stayling page description on each page except the main home page */
 .section-description {
   font-size: 1.3rem;
-  color: #555;
+  color: #2a2a2a;
   text-align: center;
   margin-bottom: 2rem;
 }
@@ -121,7 +121,7 @@ a.active {
 .right-col-photo img {
   max-width: 100%;
   height: auto;
-  border-radius: 10px;
+  border-radius: 12px;
 }
 
 /* why choose us section on home page*/
@@ -151,7 +151,7 @@ a.active {
   background-color: rgb(236, 251, 255);
 }
 
-/* service table */
+/* styling table on the service page */
 .service-table {
   margin-top: 4rem;
   width: 100%;
@@ -172,7 +172,7 @@ a.active {
   vertical-align: top;
 }
 
-/* show gallery images in grid 4x4 */
+/* show gallery images in grid 4x4 on the gallery page */
 .gallery {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -190,10 +190,19 @@ a.active {
   width: 100%;
 }
 
-/* footer */
+/* styling booking form on the booking page */
+.booking-form {
+  margin-top: 3rem;
+  padding: 3rem;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+}
+
+/* footer across all pages */
 footer {
   padding: 2rem 0;
-  background-color: rgb(57, 57, 57);
+  background-color: #363636;
   color: white;
 }
 

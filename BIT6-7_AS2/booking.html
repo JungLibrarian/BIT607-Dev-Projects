@@ -35,6 +35,9 @@
       <section class="top-section">
         <div class="container">
           <h1>Book an appointment</h1>
+          <p class="section-description">
+            Fill in the form below and we will send a confirmation email.
+          </p>
           <!-- booking form starts -->
           <form class="booking-form" action="">
             <div class="row">
@@ -81,14 +84,24 @@
                     </label>
                   </div>
                   <div class="service-item">
-                    <input type="checkbox" name="services" value="haircut" />
+                    <input
+                      type="checkbox"
+                      id="haircut"
+                      name="services"
+                      value="haircut"
+                    />
                     <label for="haircut">
                       <strong>Haircut</strong>
                       <p>bath, blow-dry, haircut</p></label
                     >
                   </div>
                   <div class="service-item">
-                    <input type="checkbox" name="services" value="nail-trim" />
+                    <input
+                      type="checkbox"
+                      id="nail-trim"
+                      name="services"
+                      value="nail-trim"
+                    />
                     <label for="nail-trim">
                       <strong>Nail Trim</strong>
                       <p>trim nails and, in some cases, filing</p>
@@ -97,6 +110,7 @@
                   <div class="service-item">
                     <input
                       type="checkbox"
+                      id="ear-cleaning"
                       name="services"
                       value="ear-cleaning"
                     />
@@ -115,7 +129,12 @@
               </fieldset>
             </div>
             <div class="submit">
-              <input type="submit" class="submit-button" value="SUBMIT" />
+              <input
+                type="submit"
+                class="submit-button"
+                value="SUBMIT"
+                aria-label="Submit booking request form"
+              />
             </div>
           </form>
         </div>
@@ -135,7 +154,7 @@
           <p>Phone: 07 111 1234</p>
           <p>Hamilton CBD</p>
         </div>
-        <p class="copyright">&copy; Copyright 2026 by Snazzy Paws Grooming.</p>
+        <p>&copy; Copyright 2026 by Snazzy Paws Grooming.</p>
       </div>
     </footer>
   </body>

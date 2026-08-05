@@ -347,6 +347,18 @@ footer .container {
 
 /* responsive mobile size */
 @media (max-width: 600px) {
+  /* make navigation item verticle */
+  .nav-menu {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  /* reduce content section margin so the content fits on the screen */
+  .top-section .container {
+    padding: 0.5rem;
+  }
+
   /* display one photo per line */
   .gallery {
     grid-template-columns: auto;
@@ -356,13 +368,5 @@ footer .container {
   .service-items {
     display: grid;
     grid-template-columns: auto;
-  }
-
-  /* reduce padding around the form group */
-  .booking-form fieldset {
-    border: 1px solid;
-    padding: 0.8rem;
-    border-radius: 8px;
-    width: 100%;
   }
 }

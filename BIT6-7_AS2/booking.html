@@ -66,6 +66,20 @@
                 <input type="number" id="dog-age" name="dog-age" min="0" />
               </fieldset>
             </div>
+
+            <!-- date and time -->
+            <div class="row">
+              <fieldset>
+                <legend>Date and Time</legend>
+
+                <label for="date">Choose date: </label>
+                <input type="date" id="date" name="date" />
+
+                <label for="time">Choose time: </label>
+                <input type="time" id="time" name="time" />
+              </fieldset>
+            </div>
+
             <!-- services -->
             <div class="row">
               <fieldset>
@@ -80,7 +94,10 @@
                     />
                     <label for="bath-and-brush">
                       <strong>Bath and brush</strong>
-                      <p>shampoo, blow-dry, brush-out and nail trim</p>
+                      <p>
+                        shampoo, blow-dry, brush-out and nail trim<br />$35 -
+                        $50
+                      </p>
                     </label>
                   </div>
                   <div class="service-item">
@@ -104,7 +121,9 @@
                     />
                     <label for="nail-trim">
                       <strong>Nail trim</strong>
-                      <p>trim nails and, in some cases, filing</p>
+                      <p>
+                        trim nails and, in some cases, filing<br />$10 - $20
+                      </p>
                     </label>
                   </div>
                   <div class="service-item">
@@ -117,9 +136,10 @@
                     <label for="ear-cleaning"
                       ><strong>Ear cleaning</strong>
                       <p>
-                        gentle cleaning of ears to remove wax and debris
-                      </p></label
-                    >
+                        gentle cleaning of ears to remove wax and debris<br />$10
+                        - $15
+                      </p>
+                    </label>
                   </div>
                   <div class="service-item">
                     <input
@@ -130,16 +150,145 @@
                     />
                     <label for="teeth-brushing"
                       ><strong>Teeth brushing</strong>
-                      <p>brushing with pet-safe toothpaste</p></label
+                      <p>
+                        brushing with pet-safe toothpaste<br />$10 - $15
+                      </p></label
                     >
                   </div>
-
                   <div class="service-item">
-                    <input type="checkbox" id="" name="services" value="" />
-                    <label for=""
-                      ><strong></strong>
-                      <p></p
-                    ></label>
+                    <input
+                      type="checkbox"
+                      id="de-shedding"
+                      name="services"
+                      value="de-shedding"
+                    />
+                    <label for="de-shedding">
+                      <strong>De-shedding Treatment</strong>
+                      <p>
+                        special shampoo and undercoat removal
+                        <br />$20 - $40 (in addition to bath or haircut)
+                      </p>
+                    </label>
+                  </div>
+                  <div class="service-item">
+                    <input
+                      type="checkbox"
+                      id="flea-tick"
+                      name="services"
+                      value="flea-tick"
+                    />
+                    <label for="flea-tick">
+                      <strong>Flea and Tick Treatment</strong>
+                      <p>shampoo and preventative treatment <br />$15 - $30</p>
+                    </label>
+                  </div>
+                  <div class="service-item">
+                    <input
+                      type="checkbox"
+                      id="spa-package"
+                      name="services"
+                      value="spa-package"
+                    />
+                    <label for="spa-package">
+                      <strong>Spa Package</strong>
+                      <p>
+                        bath, haircut, teeth brushing, nail trim and special
+                        scents or conditioners <br />$75 - $150
+                      </p>
+                    </label>
+                  </div>
+                  <div class="service-item">
+                    <input
+                      type="checkbox"
+                      id="express-service"
+                      name="services"
+                      value="express-service"
+                    />
+                    <label for="express-service">
+                      <strong>Express Service</strong>
+                      <p>
+                        for dogs that need minimal grooming or a quick touch-up
+                        <br />Additional $15 - $25
+                      </p>
+                    </label>
+                  </div>
+                  <div class="service-item">
+                    <input
+                      type="checkbox"
+                      id="medicated-bath"
+                      name="services"
+                      value="medicated-bath"
+                    />
+                    <label for="medicated-bath">
+                      <strong>Medicated Bath</strong>
+                      <p>
+                        for pets with skin conditions requiring special shampoo
+                        <br />Additional $20 - $40
+                      </p>
+                    </label>
+                  </div>
+                  <div class="service-item">
+                    <input
+                      type="checkbox"
+                      id="special-breed-cuts"
+                      name="services"
+                      value="special-breed-cuts"
+                    />
+                    <label for="special-breed-cuts">
+                      <strong>Special-breed Cuts</strong>
+                      <p>
+                        breed-specific cuts or styling based on customer
+                        preference
+                        <br />Price quoted after consultation
+                      </p>
+                    </label>
+                  </div>
+                  <div class="service-item">
+                    <input
+                      type="checkbox"
+                      id="puppy-package"
+                      name="services"
+                      value="puppy-package"
+                    />
+                    <label for="puppy-package">
+                      <strong>Puppy Package</strong>
+                      <p>
+                        introductory grooming services tailored for puppies
+                        <br />$30 - $60
+                      </p>
+                    </label>
+                  </div>
+                  <div class="service-item">
+                    <input
+                      type="checkbox"
+                      id="senior-dog-package"
+                      name="services"
+                      value="senior-dog-package"
+                    />
+                    <label for="senior-dog-package">
+                      <strong>Senior Dog Package</strong>
+                      <p>
+                        grooming services tailored for older dogs with special
+                        handling and care
+                        <br />$40 - $80
+                      </p>
+                    </label>
+                  </div>
+                  <div class="service-item">
+                    <input
+                      type="checkbox"
+                      id="full-grooming-package"
+                      name="services"
+                      value="full-grooming-package"
+                    />
+                    <label for="full-grooming-package">
+                      <strong>Full Grooming Package</strong>
+                      <p>
+                        bath, haircut, teeth brushing, nail trim and ear
+                        cleaning
+                        <br />$60 - $120
+                      </p>
+                    </label>
                   </div>
                 </div>
               </fieldset>

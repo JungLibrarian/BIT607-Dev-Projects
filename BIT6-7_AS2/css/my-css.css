@@ -212,7 +212,6 @@ a.active {
 
 .booking-form label {
   display: block;
-  margin: 0.4rem;
 }
 
 /* styling the input boxes in forms, soft box color*/
@@ -357,5 +356,13 @@ footer .container {
   .service-items {
     display: grid;
     grid-template-columns: auto;
+  }
+
+  /* reduce padding around the form group */
+  .booking-form fieldset {
+    border: 1px solid;
+    padding: 0.8rem;
+    border-radius: 8px;
+    width: 100%;
   }
 }

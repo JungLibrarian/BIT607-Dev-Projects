@@ -42,14 +42,27 @@
           <div class="row">
             <!-- contact form -->
             <div class="column">
-              <form class="booking-form" action="">
+              <form class="booking-form" action="#">
                 <h2>Contact Us</h2>
-                <div class="contact-item">
-                  <label for="name">Name:</label>
-                  <input type="text" id="name" name="name" required />
 
-                  <label for="email">Email Address:</label>
-                  <input type="email" id="email" name="email" required />
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required />
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required />
+
+                <label for="phone">Phone number: </label>
+                <input type="text" id="phone" name="phone" />
+                <label for="comment">Comment: </label>
+                <textarea id="comment" name="comment"></textarea>
+                <!-- submit button -->
+                <div class="submit">
+                  <input
+                    type="submit"
+                    class="submit-button"
+                    value="SUBMIT"
+                    aria-label="Submit the contact form"
+                  />
                 </div>
               </form>
             </div>

@@ -252,16 +252,24 @@ a.active {
   width: auto;
 }
 
-/* booking form submit button */
+/* booking form submit button make space from form box */
 .submit {
   margin-top: 2rem;
 }
-.submit-button {
+
+/* contact form - comment box styling */
+textarea {
+  width: 100%;
+  height: 120px;
   border-radius: 8px;
-  border: none;
-  padding: 0.8rem;
-  background-color: #bdbdbd;
-  color: #363636;
+  border-color: #bdbdbd;
+}
+
+/* submit button styling override form-input styling*/
+.booking-form .submit-button {
+  height: 60px;
+  border-radius: 8px;
+  border: solid 1px #363636;
   font-size: 1rem;
   font-weight: 600;
   cursor: pointer;

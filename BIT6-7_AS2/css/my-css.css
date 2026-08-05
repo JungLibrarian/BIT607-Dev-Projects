@@ -242,11 +242,6 @@ a.active {
   margin: 1rem;
 }
 
-/* remove margin between labels so that checkbox and the description are top-aligned */
-.service-item label {
-  margin: 0;
-}
-
 /* booking form - service cards checkbox to auto size rather than 100% */
 .service-item input {
   width: auto;

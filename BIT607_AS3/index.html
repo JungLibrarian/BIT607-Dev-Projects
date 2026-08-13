@@ -7,42 +7,53 @@
   <title>Home - Snazzy Paws Grooming</title>
   <meta name="description"
     content="Trusted dog grooming services in Hamilton CBD. Professional grooming for dogs of all breeds and ages.">
-  <link rel="stylesheet" href="css/my-css.css">
+  <!--bootstrap CSS-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 
 <body>
   <!--header-->
   <header>
-    <nav class="nav" aria-label="top navigation">
+    <nav class="navbar navbar-expand-lg mt-4" aria-label="top navigation">
       <div class="container">
         <!--company name-->
-        <a href="index.html" class="logo">Snazzy Paws Grooming</a>
+        <a href="index.html" class="navbar-brand fw-bold fs-2">Snazzy Paws Grooming</a>
+        <!--hamburger menu button-->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+          aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
         <!--navigation menu-->
-        <ul class="nav-menu">
-          <li>
-            <a href="index.html" class="active" aria-current="page">Home</a>
-          </li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="booking.html">Book</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
+        <div class="collapse navbar-collapse text-center mt-3" id="navbarText">
+          <ul class="navbar-nav ms-auto nav-pills gap-1 gap-lg-3">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link active text-white" aria-current="true">Home</a>
+            </li>
+            <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+            <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
+            <li class="nav-item"><a href="booking.html" class="nav-link">Book</a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+          </ul>
+        </div>
       </div>
     </nav>
   </header>
 
   <!--main content-->
-  <main>
-    <section class="intro">
+  <main class="mt-4">
+    <section class="container-fluid bg-info-subtle">
       <div class="container">
-        <div class="left-col">
-          <h1>Trusted dog grooming services in Hamilton</h1>
-          <p>Professional grooming services with care, love and expertise.</p>
-        </div>
-        <div class="right-col-photo">
-          <!--main image-->
-          <img src="images/happydogs.jpg" alt="" aria-hidden="true" width="1000" height="667">
-          <!--photo credit: Mia Anderson on Unsplash-->
+        <div class="row align-items-center">
+          <div class="col-lg-6 text-center">
+            <h1>Trusted dog grooming services in Hamilton</h1>
+            <p>Professional grooming services with care, love and expertise.</p>
+          </div>
+          <div class="col-lg-6 text-center">
+            <!--main image-->
+            <img src="images/happydogs.jpg" class="img-fluid" alt="" aria-hidden="true">
+            <!--photo credit: Mia Anderson on Unsplash-->
+          </div>
         </div>
       </div>
     </section>
@@ -94,6 +105,10 @@
       <p>&copy; 2026 Snazzy Paws Grooming</p>
     </div>
   </footer>
+  <!--bootstrap JS-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -342,7 +342,7 @@ footer .container {
   }
 }
 
-/* movile layout */
+/* mobile layout */
 @media (max-width: 600px) {
   /* diplay navigation links as a vertical menu */
   .nav-menu {

@@ -43,63 +43,68 @@
   <main>
     <section class="bg-info-subtle">
       <div class="container p-4 p-lg-5">
-        <h1>Book an appointment</h1>
-        <p class="fs-5">
+        <h1 class="text-center">Book an appointment</h1>
+        <p class="fs-5 text-center">
           Fill in the form below and we will send you a confirmation email.
         </p>
         <!--booking form starts -->
-        <form class="booking-form" action="#">
+        <form class="container mt-5" action="#">
           <div class="row">
             <!--owner details-->
             <div class="col">
-              <fieldset>
+              <fieldset class="border p-3 rounded">
                 <legend>Owner details</legend>
-                <label for="owner-name">Owner's name:</label>
-                <input type="text" id="owner-name" name="owner-name" required>
-                <label for="email">Email Address:</label>
-                <input type="email" id="email" name="email" required>
+                <label for="owner-name" class="form-label">Owner's name:</label>
+                <input type="text" class="form-control" id="owner-name" name="owner-name" required>
+                <label for="email" class="form-label">Email Address:</label>
+                <input type="email" class="form-control" id="email" name="email" required>
               </fieldset>
             </div>
 
             <!--dog details-->
             <div class="col">
-              <fieldset>
+              <fieldset class="border p-3 rounded">
                 <legend>Your dog's information</legend>
-                <label for="dog-name">Your dog's name: </label>
-                <input type="text" id="dog-name" name="dog-name" required>
-                <label for="dog-breed">Dog breed: </label>
-                <input type="text" id="dog-breed" name="dog-breed">
-                <label for="dog-age">Dog's age: </label>
-                <input type="number" id="dog-age" name="dog-age" min="0">
+                <label for="dog-name" class="form-label">Your dog's name: </label>
+                <input type="text" class="form-control" id="dog-name" name="dog-name" required>
+                <label for="dog-breed" class="form-label">Dog breed: </label>
+                <input type="text" class="form-control" id="dog-breed" name="dog-breed">
+                <label for="dog-age" class="form-label">Dog's age: </label>
+                <input type="number" class="form-control" id="dog-age" name="dog-age" min="0">
               </fieldset>
             </div>
           </div>
 
           <!--date and time-->
-          <div class="row">
-            <fieldset>
+          <div class="row mt-3">
+            <fieldset class="border p-3 rounded">
               <legend>Date and time</legend>
-              <label for="date">Choose date: </label>
-              <input type="date" id="date" name="date">
-              <label for="time">Choose time: </label>
-              <input type="time" id="time" name="time">
+              <label for="date" class="form-label">Choose date: </label>
+              <input type="date" class="form-control" id="date" name="date">
+              <label for="time" class="form-label">Choose time: </label>
+              <input type="time" class="form-control" id="time" name="time">
             </fieldset>
           </div>
 
           <!--services-->
-          <div class="row">
-            <fieldset>
+          <div class="row pt-3">
+            <fieldset class="border p-3 rounded">
               <legend>Choose services</legend>
-              <div class="service-items">
-                <div class="service-item">
-                  <input type="checkbox" id="bath-and-brush" name="services" value="bath-and-brush">
-                  <label for="bath-and-brush">
-                    <strong>Bath and brush</strong>
-                    <span>
-                      shampoo, blow-dry, brush-out and nail trim<br>$35 -
-                      $50
-                    </span>
-                  </label>
+              <div class="row g-3">
+
+                <!--bath and brush-->
+                <div class="col-12 col-md-6">
+                  <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="bath-and-brush" name="services"
+                      value="bath-and-brush">
+                    <label for="bath-and-brush" class="form-input-label">
+                      <strong>Bath and brush</strong>
+                      <span>
+                        shampoo, blow-dry, brush-out and nail trim<br>$35 -
+                        $50
+                      </span>
+                    </label>
+                  </div>
                 </div>
                 <div class="service-item">
                   <input type="checkbox" id="haircut" name="services" value="haircut">

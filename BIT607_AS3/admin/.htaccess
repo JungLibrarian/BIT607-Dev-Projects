@@ -1,4 +1,4 @@
 AuthType Basic
 AuthName "Restricted access"
-AuthUserFile "/app/www/.htpasswd"
+AuthUserFile "C:/wamp64/www/BIT607-Dev-Projects/.htpasswd"
 Require valid-user
